@@ -146,8 +146,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## 🔗 Links
 
-- **Live Demo**: [Your Deployment URL]
-- **AI Backend**: [Streamlit App URL]
+- **Live Demo**: [pulmoscan.netlify.app/]
 
 
 ## 📞 Support
