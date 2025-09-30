@@ -323,119 +323,7 @@
 </script>
 
 
-  <!-- AI-Powered Disease Prediction Section
-  <section id="disease-prediction" class="py-16 relative" style=" background: #2e2e2e; background: radial-gradient(circle, rgba(46, 46, 46, 1) 0%, rgba(0, 0, 0, 1) 100%); z-index: 1; position: relative;">
-    <canvas id="disease-particle-canvas" class="absolute inset-0 pointer-events-none" style="z-index: 0;"></canvas>
-    <div class="container mx-auto px-4 relative z-10">
-        <h3 class="text-3xl font-bold text-center mb-12" style="color: #ffffff;">We Can Detect These Skin Conditions</h3>
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="picture">
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8v5UqttrtNC85idwbCxKqAmJIf25oVaQa9g&s" alt="Melanoma">
-              </div>
-              <div class="detail">
-                  <h4>Melanoma</h4>
-                  <p>A type of skin cancer that develops from the pigment-producing cells known as melanocytes.</p>
-              </div>
-          </div>
-          <div class="swiper-slide">
-              <div class="picture">
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG6vxsF3-JK2mNKBal49Hsno9Z0qSvUWs1CQ&s" alt="Psoriasis">
-              </div>
-              <div class="detail">
-                  <h4>Psoriasis</h4>
-                  <p>A chronic autoimmune skin condition that causes red, scaly patches on the skin.</p>
-              </div>
-          </div>
-          <div class="swiper-slide">
-              <div class="picture">
-                  <img src="https://montrosedermatology.com/wp-content/uploads/2024/01/Eczema-1.png" alt="Eczema">
-              </div>
-              <div class="detail">
-                  <h4>Eczema</h4>
-                  <p>A condition that makes the skin red, inflamed, and itchy.</p>
-              </div>
-          </div>
-          <div class="swiper-slide">
-              <div class="picture">
-                  <img src="https://www.skincancer.org/wp-content/uploads/basal-cell-carcinoma-1-shiny-bump.png" alt="Basal Cell Carcinoma">
-              </div>
-              <div class="detail">
-                  <h4>Basal Cell Carcinoma</h4>
-                  <p>A type of skin cancer that begins in the basal cells and appears as a slightly transparent bump.</p>
-              </div>
-          </div>
-          <div class="swiper-slide">
-              <div class="picture">
-                  <img src="https://static.wixstatic.com/media/3b1e34_11e7c525a0f54ca69969622a00209196~mv2.png/v1/fill/w_568,h_376,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/3b1e34_11e7c525a0f54ca69969622a00209196~mv2.png" alt="Rosacea">
-              </div>
-              <div class="detail">
-                  <h4>Rosacea</h4>
-                  <p>A chronic skin condition that causes redness and visible blood vessels in the face.</p>
-              </div>
-          </div>
-          <div class="swiper-slide">
-              <div class="picture">
-                  <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUTExMVFRUVGBcYFxgVFxcXGBcYFRcXFxcXGBcYHSggGBolHRUXITEhJSkrLi4uFx8zODMtNygtLi0BCgoKDg0OGxAQGi0dHSUtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAL0BCwMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAGAgMEBQcBAAj/xAA9EAABAwIEAwUGAwcEAwEAAAABAAIRAwQFEiExBkFRImFxgZEHEzKhscFS0fAUI0JicuHxJDOCkqKywlP/xAAZAQADAQEBAAAAAAAAAAAAAAABAgMABAX/xAAkEQACAgICAQUAAwAAAAAAAAAAAQIRAyESMUEEIjJRYUJSgf/aAAwDAQACEQMRAD8AOQlhIalhTFFhLCQE4ETCglhJCWEQiglgJIQZjOKPddupAkNZlA6SWgk+Mn5JZOimLHzdBzC6EPYFib83u36ySAfKR+SIJRTs2TG4Oim4qxY29NuX4nmAegA1I79h5qrwniFzYzEuLiBqeqRxTUbVrBjvhYI/5EyflCTTw9jKWduvPXkot22zrwwjw2uw3pPDmhw2IB9U4AhC5x51KhbsYYfUaTOhhrT38ySPQqy4fxw1XGm8dpsa8jMx9FRTXRF4JU5LovwEoBcCUAnOc9C7C9C6AiA8vLsLyITi6uryxji8kV6zWNLnHKBzKboXjHgETDvhJG/gtaCotqx5dXl5EU8kOrNBgkT0VdxHi7bWi6oYzbMHVx206Dc+CC6dSoQytmLp+LucTMnx+ylObT4o6MOHmr8GjhwOy4UP8LVy4vnpr3md/FEMJ4uyWSHGVCCuJZCQUxM4SuLxXEwAdCcCbanAohFhLCQ1ONWCLCWEkBKCJjlR8AlA1nVpPuHGo4Z3OdzEkTppKM713ZPgsJxXMbqoRtnMd0GPspTe0XwumbDdMDKlMiIzN28QiCq+ASsx4dxN3vKVKoTlJaQSZIIIMSeqNeL7/wBxa1Xg9qMrf6nHK35kFG9NjZt0jIOI8Ye+8qOBcG5i0ZXQCBoT5wrTA8aqMmk5zixzSWg6kQJgHmkt4Ye2l712wAJHNMWVGXlw+Gm0nzPZA+amkqryVha86LLEcQc66oUW5czGto69wbJ0/mL0fULMUcjhMlzSSecEfJYk99Q3TqwOpqFw1OkHT6LV8Lv3V20p3zNaR0Mgeiz0PCVo0NKCS1LC6Tzzq7C8uhYB4BdXoXUTHF5eTF7WyMc7oCsEDOKsRbcV/wBlY6Mk5jyzkCPT7lWdvnbTYHjKQQ2SdNTpBWcYTff6pz3c3knzRLxPxE5rabAIbo4HkSDt5EArmxztybPRS4wSRotJ8gH9SlEqn4VxcXVEvAgh2Vw6HK133VhfVcrHO6Aroi7RwTVSaMr45xb314ac9ikA0eJ1cft5K9wrHLehRLS4ZnCI3k9NJWdV89WtVcNy4698lNYKauV0SXc9SR3y3Yj5rmi25to7U+ONI2fg6rmotn4odMkE/FpJHdCj47xPlqOo0dXMbLz3/hHgNSg/hriB1tQupADm087CCficWsAIO2pB9UjgdpdULzrJ7RPOd58UzbpRFhBSk5vpBph+PuOQO5wD56aIkKHKeG0/eB1N0tB2316IjKvBEPUcbVCSuLq4nOYHmpYTbU4FII1d3rKQBedzAA1JPcnrS8Y/aQe/6Ia43rRTpgfEHgz0EEfOfkrLhtvvG6nUgeo2Sp26OnHCMo2+y+ASgEzRfMidRoU+AmRGUadELE3QwrCmXM1Xa7ucfUlbbjz4pu8FglvUy1J/iDpjrB7ypT3IpjdBQKpNWj/U35EIm9reJwKFEHVzy8+DBH1cD5IQdduq1aboAOZp0AA3lO+0a9Fa6gHRjG/+Uu31jSEEtNFcnhlldcTvezIwZWkQ7NEnwQ0MX93nb+IfNkkKFa3DWtyyHfy6OJ9HaKtr5jWaIifOIg7DwT8Ng56LSydqNVqHBUECIn3rJ8NIlZbaOJds0nxIPjEwUdezq4cbxjfxakdMms/X1Qcdf6GMtM2RoTgSGpYCscp0JS4EoLAPQvQuwvQiY4qfiarloP8AAq5KH+KdaTh3IPoK7MYsXxW81cnHhcdktyhmg1HPckKktjFfzRBjpE0QyiHOcDqGzJ6aLjxakeg/ggq9nV20VK1IfxNbUb/xOV31HoiDiy5FO3qO6NKzLBr91rd0XOaWRUDXgiID+y6dTydPkEXe1C7y25b+IgLpTpOzlmvcjO8DrNaS95hskk/JHWD4NaPb71rS4P1kE789tlkVa57TWbNAnxJJWwez7E6VWhla3J7vQ9/fMKGJNPZ0yftALH7eoKb3hrhTNT3evWZA7/hScOvKrQGU3ZTEz112V/7SccpuYbZoMsqtdm0ynR0/VV9i1o91ERlJmdZ5+SNe4KemWnCmK1zd0abnOyuf2pEgwCdCNOS1grKOGHtdiNCPxPPpTf8AktXXRj8nHmu0cKTCbq3tJrspcJ2jv6ePcnGODhI2KdSRJxa2wealpDUsJAFBxLbZ6bvBZqceuadXIHua0RAGnjPVa7iFOWkLJONcOLHZ28tT4KMlUrLY5UafwjesqU5BGeZPUyBJ79kTscCJXz7w1i7g4Q6COh1C23AsQFWk141JAzDo4bp0ysoqatDPETuwfBYO0S8zG52kc+5btxBUHuye4rBmf7rh/M76pL9xNIILIEvZGkEH01VJXuTUqF+skjXnoA0fRW5qZG5t4/wqK1bESUUtlpPVFqzUbk+f5Ku9xmqOJ2EAdxGs6+KtaLRl8kzd0gx+UbgDN/VALvnKLbsWtCreiSeU9dR9Ha+iOvZnZn9rD5kMa4E97gYAHTQoKt6nVar7NqI901wEaOzHq4ugeUNKZvpAqk2HYSwkNTgTnOKCUEkBKAWAdXl5ehazHHIf4lP7p3giByG+KD+6d4ISegrsxV/+75ojtuLaNLsEOLhp8JIkdCEO1dKg8VVNaPeuBn4jsY5rlxK2d1tRCvGsXbdEFtMtOgcTILo205acz0Vl7RMR97ToEfxU2v8A+zQfuh60twBOnnmcfnsvY5XzU2CfhBb6Ex8oVZutCJXTB67AztEbtO3d/ZGns4xNlMPovzAP1DgA/XYiAczd+aCsVMPp/wBM+p/sp9kQRqJO+kT6kLQ6DPUgj464ebStn1ZcZqUgwuGV0EnOCOe8+SjcMWnvBlBEkHUn4dN8sy4JPtB4ibWbbUmElujnBxkgtaRHlKqW1oGhMQNRyPPNA270UrYHKg04OoBmJ0mh4eWipJG0+6eDHqjfjDiEWzW02H97VnL/ACtG7vmAPHuQB7Mm5r1rt8tOo6ZB5Bu4/qUXGsTNziNV41YwimzwaTPqdfNZvjB19ixjzyKw5wS1fVp5t3N7Qnn1CJMLaRSbm0Os+pQ5geMNpNLHObqNjvqr+2uJaCO/6oxpJD+otorWpwJppTgKc4RuuNEG8TWOcHRGtQKpxChIKSatDIwx9A0a5HKZHgVo/C+OCiQ7UtdAcOkcx15oX4xw+DnG7dfLmoGF3xAiUidr9OjHKjTuLsWpCgX0qoJcNGg6+JHJZBav7RPeiC5r5mynLPh9gsnXL3HO50U2yAImDM7nf0W/RpbZAdWlsKOygQe01wnqCPqtDssIsqdm17ixzxDy7MAcx1A7hrsqu6xB17Qql1JrRRDXNI79I9FuWzcdWweZWgdneR8kxUlzsxMk6nvnmutfCdzAx17k9CpjrKB5H6rcOFLMUqWUfwhrfHK2SfMuKxvDrfPUa0Qe02ZMNGv8R+w1W5YMP3c9S4/OPssvkafwLFqcamwoGJYqKZyN1ede5o6n8kzdEYxcnSLSpVa0S4geP5c1wXVOCcwAAJM6aASTqhi5c4NNRxJdyn7IH41xRrLd2VxzHsjU5iSdZ6pHJo64+njW2anQx6g92Vrp8I18BMqxp1A4SDK+fOHsXIbDd5BEbzPVbFhd4XU2vGjo1Wxyb7Gn6aNe1hA9DnEg7Dld0LkVGzzGhH65Kl4g+Ap27Rx8WnTMUxDR5PQ/dUl47LXd3wfkr3GBD3eKp8YYc1M8i0+ui5cfyOv+AR8M4yKDw5zBUbBBaY1DhG8KJf0XVGlzGkgEyByDtvy9FGtrdwAJBAdsSN/AblGlph77JrLmWVqNQZSAYzB4PZMjQgiZ6tVpKxYv7M1x3SsGx8LWg+k/dTLF2icxSlnquc4ASZ8unlou06IaEYrQJu2VGOyKlI/1fZTrK4Ib0Xscsy6mxw1yu18CIn1hMNMQPBGqQjdsOuErv9ms7y7J7RDaVP8AqIJP1Z6KLw9bCnSNR4kDU97jy9dF68pt91SoMHYYTVePxVXgAA+AA9Qra3DadlUzjXkO/kpt8qRaEeNyB3F6877nXfryWz8P0Cy2otcO0KbJnqQCfmVjXDlmbu9pU4lpOZ8//m0y71+HxctzlWxR3bObNO9FAE4E01ONRIHSol0zRTExXCDCAnEllIJhZswGnULTyOneOS2bFqEgrJ+JWZKresH66fdRWp19lYsfuLvOBDWsAGzZ1PMklQ23L3dkvcWtPZbOg8AmqVVKpN1lPQ9tjlUkp2jWcARJAMSORjaRzTb2pLSsMidUpDKDIHjt5rjAXQBskN7Q15Kww6hJRujVZLw5jmuYGwIIOvMjXbppr4Qt1w8DIABEf5+6xalbwR+t9/13BbJhE+6YTu9rSfEtCPk0l7R6/vG0WF7uWw6nkAhXCmucS+p8TzJPeU5i1Z1xWIA7FIlo73Aw4+ojy70jiRpp2NYxHYI074E+SjKXJ/iLY4KEf1knF8YoUmgVHtDiDl1AmN46oKrYKLi3Nw4l3vRLOgZyI8d/CEAWttVu7hlqyS+o7LP4Ru6p4BoJ8lu+I2jKVuKbBDWMDWjoGgAD0Cqotq2c+XL4RjPDzSysGgT2jK2HBqkNEbfdYneXhoVHVAJyk/VaH7PcdNxTzRBBjXXz8FJWjqxSTVB5QrZKo/C7Q/b5/VJxzVpXa1tmaot/W/dGd26Hy5qi1aJZ49SRkeP/AO64d6gcRUMraT9YbIeObdQA7wRjgWAm4rmrUEU4eRPONM3hr8lS8Q1xUuCGxkDQwxBDiJl366BQxr3WO3UaJN42pXdRdTHvG5Q0ZdAzSCT3bb9E/e4w5tJtnmY8UyS5wk9uT2Wnu19VQVqNzZ5XN95TY7Yw4Ag7akRy3/smm1O1K6EvsnaJ9Gz969rTAlwEnYZiBPgNUcW2H4fWpfsggVWy0PjtZxuQ7YzG3RAxqQ2eny0/uorMReO0HbbRy1nUdx1HSUzX0BOux5llUdW/ZssPLi2NpMkbnTkpOMcHVbagKtXR2aA3QxJgHMDtzjvRnwPe07ys59Wiz3zWhzXj7jr3qb7RLlotnUngnMRlI/hcNQfDSPNLdoyjsE8LuKfuP3jmjKZkwCQe/c7H5KoxzGve6DRjdu/vKk18EqOs212dpmuaN2FriASOm3qhR2Z7msaJc4hoaObnEAAd5JSxhqxpZKVGoex/DgG17jXtOFNs8soDnEeJc3/qtFVZw3hItLanQG7G9ojm86vPqT5QrKV0xVI4ZO2D7U4E21LCmYcTbwnAuOWCVOIU9Csc40H+pcOgA+62q8bosT4udN1V8QPkFKS9yHRV0X6KTbuUJjlMtimHTJZcvMaut221XXGEpVC2bq3sHwQqVjlOta2qDGQTUyjfAcR9/autpiqwAs7wHaehgeBWY07yFPw3FHU6jajT2mkEd8EaHuQ7CtGkYPbj4gMsmXDo7n81G40xig23q0nvaC5jhG5mNNPGFSXfHDmFzm02Q6SBroT1WfClVv7prBM1XwXRtJlx8hJ8kkf6oecv5MOfY7gOVtS9eNak06U8qbT2z5uEf8O9GnETv3Z8FY2NoyjTZSYIYxoa0dA0QFW40JaV2NVGjzm7dmGYvQ7bgec/NI4BxEW9y3O4hoJmCQNREkcwrXiWjFUqhtcLL6wLXASdZXL4aOrFfJUfReHXLa1IFjgWnmNdlWYrZhwNNs9r4zOw7k7wbQZQt2MLpDQfnJP1Q7x3xY1jHUqJ/ePPacP4G9B/NCPaTZeTp0ROJ8aAa63oxlgNeW938APQc/RCFCkMzZ2kfVRaVzCucBxCnSeXvZn07PcTz1WXQhfcbcQC7txQYzQQcx/l6Dly3Wf0dN+Wiu7q4zkuHMkx0lUtV2s7f3VLsVqizaQW/qVCqW2p10UhujZ8kmi87IoVk7h3HHWVXMBLSII0mN91b8WcVtu2CmxvMEu2iDMD5IYuwEi0A10QrYU9B3wBijBTdau3c4uHSCGghQ8A4dazGcsdik11Zu3SG+jnD0CEqWfMTTDpaCZZu0czpsjz2TsfUdXr1HFxDWUml0zGriNfBq0VuhMj9poZXl5eXQcgPtSwU00pwKQw6F5ySCukrGIV6dCsO4qH+qqdXEEeg/JbbiTuyVjvFNMmu4yANhGrj1noApS+SKRKJrFJopOWEtjen5pxkTKS69ept0Sw3qtRRMiEwn6dVJrUuaY5pGgonisnWXcKpfXhR6lyTsgo2Fzosr7ECdJWq+yi1DqArZYy5mNJ5untuH09VlfC/D9S9rtpglrZ7TuYHdPNfROFWFO3pMo025WU2hrR9yTuSZJPUquOFOyOTK2qJZVViTdCrQqvvhonkQRlXFtvrKE31chDpIyuBMdBv5QVoXFdvIKAazFytbOmDCbEuJHOtW5XlpBggGCQR3IVfc5uai4mQKemm0Dv/wASq23uk0YlZ5LYTYhSp0yAypnMAnTQSOvNOWtUaTtInw5qhbU1Cn0qqNAUi0uazA85CS2TBOhjvUOrUl3JRs5TZrahMkZyLdrtEukCE3RcC0fopbnfL9DonSEsbuKuuq973RMF8pNRyUNk/B7k03+8EdncTEhwI1jcAkEhav7PKDG2pcwQKlWo70IYP/T6rG7dq23gellsaI6hx/7PcR8iFsfyJ5XovVxeXJVznB5pSwU0ClgqYw6CvOcma9w2m0ve4Na3Uk7BZvxTxW+4mnSltHnydU8eje716BW6DFWWfE3F7ZNOhDiNC/doP8v4vHbxQFdVHPcXOMuOpOg+Q0SmhILCUi7tluNIaAT9OklMpqTTYmsKicptTgYF51QBQbm+j4d0GU0iTcEAbqkr3cnRIrF79z5BMtp6wAT4LUTlKzxJKlWdoXuGkz80u2s5jmT/AAj7laVwPwtBFSoNeQ6LLfQj/Qj9nvD4t6edw7bvl3I0CZoU8oA6J4K6VEW7POUK6GimuUS52QZkB2P0MwKzzEbbK4rVMSpTKDsZsZnRc2ReS0WA11RzAg80N1mFpI6IvuqUGFT4jaZtRv8AVaEvAzVlbb3PJWtu+YQ9UaQSpdnfRoVVoVSCRjE3UoSVGt72VYUaoKCKWSbKRodlKqtgcvT+y7SLSNGtHgEiq8gAKtaEvZHNNR6jOimMeCCIlRXvg6jTr/hS2PoXQadN/wBclv2F2/uqNKn+BjGnxDQD81k/BOCPrXNMuY4U2HO4kEA5dQNd5MeS2Apse9ksr8HSuLhK8qkQcBVdi+PUbYdoy87MbufHoO8oaxzjGZZb+BqH/wCR90JlxcS4kknckySe8rnlP6LQxtlhjmNVbp3bMMHwsGw7z1d3qtyp5lNSG0lLkdCgkQRTTraCn07ZOZYTJhogihC69gAT1Z8KHUqo2akRqzZlRjTClOaSm6jcup1+/wDZaybOi3YG56mx+Fo3dH0HemqFq+odGwOg2H5qywzC31nZnbfboO5HGD4GBGiKi2I5UV3CvC4BDnCStKsLYNAAUextQ0bKyYFaMaJSdjoS02EtMIcco1dSHJiogwlVdU1QYjbzKJ67VVXdJTaGTM8xix3Q7VZC0TErWZQVilDK4qDVFYsH8QtBUE7OHPr3FUBYQYI1RY9qp8Wt9Q4eB+ypCT6BJDVmCru1pHqqiyV/aFUsyJtvPRS/daJq3KmgJ0zURDa9P16q34Vw+lUuWCqeyCInmQZA13nbzURqUe78lOatFIo2OhSAJPl5D9fJPIZ4Jxg16RY8y+nA13LTse/WR6IklUh8TnnfJnSVxJlclMIfPTApFKmV2nT1UyhTXE0d6PUaCnU7QrlJwC7UvYG6PGg2SHFjR3quurkf4UatdEqG+ot2C6F1a6iVbkBdKaDgDoJPemSElIsf2FzaYq1eyHfAydXdCe5LwvDXVnyV23ZUuXgvJMadwHcEfYLhYYBomUbf4SlKhWF4WGgCEQ2luByXKFGFNYFZIk2O0wnAm2lKBTAHgUoFNApUrAFOKZenCU25KEj1QoFwxWD1ErNQYSgv6eiA8d+JaBiroBWcYzUl6jMpEqnhRb2nLD6+iluTNUaHwKRdlGVNoVc2rwqS23VtbFVYsS8t3KxpwqW2erS3egpFeJJIXCUsOlJLU1gqix4Yvvc3NNxMBxyO8H6fIwfJaksbc2NVqOA4h7+gx89qMrv6m7+u/mmh9Ecq8ljK8kryoRMQpt5pTqiTm0SRrquY7hL6xKbJKeLAU3UOiWzDDnJiq5LqFQbmoVkLJi6tWdAn7K0kwOe5TdCkBp80W8N2LTBTJWSbLjh7CQ0AkIst6UKPaUgArCmFdKiTY4wJwFICUCmAOApQKbCUCsYcBSpTQKUCgYWSklclcJWMIeotZSXKFePgFBmQMcRXMAhZ3dPlxKKuJ7g6oQeueW2WihtybeNCnCkOQQxT0hqrC3KrmnUqXQKowRLe3erKg5U9HcKyoOgKbZaJZUynwVFpOUlMmFnURcE4hkqmkdqmo7nCfqJ9AhqdYTlKoWuBBgtIIPeNQUydMnKNo1qVxR7GuX02POhc0H1Ep3Mr2ch//9k=" alt="Vitiligo">
-              </div>
-              <div class="detail">
-                  <h4>Vitiligo</h4>
-                  <p>A condition in which the skin loses its pigment cells, leading to discolored patches.</p>
-              </div>
-          </div>
-          <div class="swiper-slide">
-              <div class="picture">
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlYCm_In6d0R9HSLQ3-ogVNeJe6CGNGTlaWw&s" alt="Actinic Keratosis">
-              </div>
-              <div class="detail">
-                  <h4>Actinic Keratosis</h4>
-                  <p>A rough, scaly patch on the skin that develops from years of exposure to the sun.</p>
-              </div>
-          </div>
-          <div class="swiper-slide">
-              <div class="picture">
-                  <img src="data:image/jpeg;base64,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" alt="Tinea">
-              </div>
-              <div class="detail">
-                  <h4>Tinea</h4>
-                  <p>A fungal infection that can affect different parts of the body, also known as ringworm.</p>
-              </div>
-          </div>
-          <div class="swiper-slide">
-              <div class="picture">
-                  <img src="https://www.houstonent.com/hubfs/shutterstock_2021018495%20%281%29.jpg" alt="Hives">
-              </div>
-              <div class="detail">
-                  <h4>Hives</h4>
-                  <p>A skin rash triggered by allergens, appearing as red, raised, itchy welts.</p>
-              </div>
-          </div>
-      </div>
-      <div class="swiper-pagination"></div>
 
-      </div>
-    </div>
-</section>
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper(".swiper-container", {
-            effect: "coverflow",
-            grabCursor: true,
-            centeredSlides: true,
-            slidesPerView: "auto",
-            coverflowEffect: {
-                rotate: 20,
-                stretch: 0,
-                depth: 350,
-                modifier: 1,
-                slideShadows: true
-            },
-            pagination: {
-                el: ".swiper-pagination"
-            }
-        });
-    </script> -->
 
   <!-- Image Upload Section -->
   <section id="upload"
@@ -495,33 +383,24 @@
         <img src="author1.jpg" alt="Ayush Rathi" class="w-32 h-32 rounded-full mb-4 object-cover border-2 border-white" />
         <h4 class="text-2xl font-semibold mb-2">Ayush Rathi</h4>
         <p class="text-gray-200 text-center">
-          Ayush Rathi is a skilled developer with deep expertise in artificial intelligence, full-stack development, and intelligent system architecture. He specializes in building scalable, high-performance digital platforms tailored for real-world impact. With a strong foundation in modern technologies, Ayush is passionate about driving innovation through smart, future-ready solutions.
+          Frontend Developer and Medical UI/UX Specialist responsible for PulmoScan's intuitive interface and user experience. Ayush designed the responsive web platform, particle animations, and seamless integration between the AI backend and user-friendly frontend, ensuring medical professionals can easily access diagnostic insights.
+          
         </p>
       </div>
 
       <!-- Creator Card 2 -->
-      <div
+       <div
         class="creator-card p-6 rounded-lg border transform transition-all hover:scale-105 text-white flex flex-col items-center"
         style="background: rgba(178, 153, 153, 0.19); border-radius: 16px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); backdrop-filter: blur(4.8px); -webkit-backdrop-filter: blur(4.8px); border: 1px solid rgba(178, 153, 153, 0.73);"
       >
         <img src="author2.jpeg" alt="Krishna PB" class="w-32 h-32 rounded-full mb-4 object-cover border-2 border-white" />
         <h4 class="text-2xl font-semibold mb-2">Krishna PB</h4>
         <p class="text-gray-200 text-center">
-          Krishna is a motivated innovator with a strong background in computer science and technology leadership. Specializing in building efficient systems and leading tech initiatives, they focus on developing intelligent solutions that connect theory with practical applications. Their expertise spans software engineering, AI, and research leadership, with a goal of driving impactful innovation in areas like automation and digital systems.
+          AI Engineer specializing in medical imaging and machine learning. Krishna developed the core lung X-ray analysis algorithms and neural network architecture that powers PulmoScan's diagnostic capabilities. His expertise in computer vision and deep learning enables accurate preliminary lung cancer detection.
         </p>
       </div>
 
-      <!-- Creator Card 3 -->
-      <div
-        class="creator-card p-6 rounded-lg border transform transition-all hover:scale-105 text-white flex flex-col items-center"
-        style="background: rgba(178, 153, 153, 0.19); border-radius: 16px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); backdrop-filter: blur(4.8px); -webkit-backdrop-filter: blur(4.8px); border: 1px solid rgba(178, 153, 153, 0.73);"
-      >
-        <img src="author3.jpg" alt="Aniket Kundu" class="w-32 h-32 rounded-full mb-4 object-cover border-2 border-white" />
-        <h4 class="text-2xl font-semibold mb-2">Aniket Kundu</h4>
-        <p class="text-gray-200 text-center">
-          I'm Aniket Kundu, a CS undergrad at VIT Chennai passionate about AI, ML, and NLP. I built “Free GPT,” a multi-agent AI using Mistral-7B, LangChain & HuggingFace. I've interned at SpectoV and Chakaralaya Analytics, working on LLMs, RAG systems, and GPU-accelerated tools. Certified by Stanford, IIT Madras & Harvard; ranked 1st zonally in the SOF Cyber Olympiad.
-        </p>
-      </div>
+
 
     </div>
   </div>
@@ -534,19 +413,19 @@
   <section id="contact" class="py-16 bg-gray-900">
     <div class="container mx-auto px-4">
       <h3 class="text-3xl font-bold text-center mb-12">Contact Us</h3>
-      <form id="contact-form" class="max-w-lg mx-auto space-y-4">
+      <form id="contact-form" class="max-w-lg mx-auto space-y-4" netlify>
         <div class="form-group relative">
-          <input type="text" id="name" required class="input-field peer" placeholder=" " />
+          <input type="text" id="name" name="name" required class="input-field peer" placeholder=" " />
           <label for="name" class="floating-label">Name</label>
           <span class="error-msg hidden">Please enter your name.</span>
         </div>
         <div class="form-group relative">
-          <input type="email" id="email" required class="input-field peer" placeholder=" " />
+          <input type="email" id="email" name="email" required class="input-field peer" placeholder=" " />
           <label for="email" class="floating-label">Email</label>
           <span class="error-msg hidden">Please enter a valid email.</span>
         </div>
         <div class="form-group relative">
-          <textarea id="message" required class="input-field peer" rows="4" placeholder=" "></textarea>
+          <textarea id="message" name="message" required class="input-field peer" rows="4" placeholder=" "></textarea>
           <label for="message" class="floating-label">Message</label>
           <span class="error-msg hidden">Message cannot be empty.</span>
         </div>
@@ -556,11 +435,31 @@
         <div id="form-success" class="mt-4 text-center text-green-500 hidden">Message sent successfully!</div>
       </form>
       <!-- Social Media Icons -->
-      <div class="mt-8 flex justify-center space-x-4">
-        <a href="https://www.instagram.com/spacex/?hl=en" target="_blank" class="social-icon">IN</a>
-        <a href="https://x.com/SpaceX?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor&mx=2" target="_blank" class="social-icon">TW</a>
-        <a href="https://www.linkedin.com/company/spacex" target="_blank" class="social-icon">LI</a>
-        <a href="/blog.html" target="_blank" class="social-icon">Blog</a>
+      <div class="mt-8 flex justify-center space-x-6">
+        <!-- Instagram -->
+        <a href="#" target="_blank" class="social-icon p-3 rounded-full border border-gray-600 hover:border-neon transition-all">
+          <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+          </svg>
+        </a>
+        <!-- Twitter/X -->
+        <a href="#" target="_blank" class="social-icon p-3 rounded-full border border-gray-600 hover:border-neon transition-all">
+          <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+          </svg>
+        </a>
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/ayushrathi21/" target="_blank" class="social-icon p-3 rounded-full border border-gray-600 hover:border-neon transition-all">
+          <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+        </a>
+        <!-- GitHub -->
+        <a href="https://github.com/Ayush-R-athi" target="_blank" class="social-icon p-3 rounded-full border border-gray-600 hover:border-neon transition-all">
+          <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+          </svg>
+        </a>
       </div>
     </div>
   </section>
