@@ -20,7 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Form Validation for Contact Form
     const form = document.getElementById('contact-form');
     form.addEventListener('submit', (e) => {
-      e.preventDefault();
       let valid = true;
       form.querySelectorAll('.input-field').forEach(input => {
         const errorMsg = input.parentElement.querySelector('.error-msg');
@@ -31,13 +30,10 @@ document.addEventListener('DOMContentLoaded', () => {
           errorMsg.classList.add('hidden');
         }
       });
-      if (valid) {
-        document.getElementById('form-success').classList.remove('hidden');
-        setTimeout(() => {
-          document.getElementById('form-success').classList.add('hidden');
-          form.reset();
-        }, 3000);
+      if (!valid) {
+        e.preventDefault(); // Only prevent if validation fails
       }
+      // Let Netlify handle the form submission if validation passes
     });
   
     // Upload Button Ripple Animation & Disclaimer Popup
