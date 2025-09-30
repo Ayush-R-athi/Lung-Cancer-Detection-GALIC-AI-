@@ -146,7 +146,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## 🔗 Links
 
-- **Live Demo**: pulmoscan.netlify.app/
+- **Live Demo**: [pulmoscan.netlify.app/]
 
 
 ## 📞 Support
